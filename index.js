@@ -1,4 +1,4 @@
-let currentIndex = 1;
+let currentIndex = 0;
 let audioPlayer = document.getElementById("audio");
 
 function updateContent() {
@@ -17,7 +17,7 @@ function playAudio() {
 }
 
 function prevContent() {
-    if (currentIndex > 1) currentIndex--;
+    if (currentIndex >= 1) currentIndex--;
     updateContent();
 }
 

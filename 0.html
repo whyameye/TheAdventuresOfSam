@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="800" height="400">
+    <!-- Ocean background -->
+    <rect width="400" height="200" fill="#1E90FF" />
+
+    <!-- Sand at the bottom -->
+    <rect y="180" width="400" height="20" fill="#F4A460" />
+
+    <!-- Coral reef -->
+    <polygon points="50,180 70,150 90,180" fill="#FF6F61" />
+    <polygon points="120,180 140,130 160,180" fill="#FFA07A" />
+    <polygon points="250,180 270,140 290,180" fill="#FF6F61" />
+    <polygon points="320,180 340,160 360,180" fill="#FFA07A" />
+
+    <!-- Title Text -->
+    <text x="200" y="100" font-size="30" fill="white" text-anchor="middle" font-family="Georgia, serif">
+        The Adventures of Sam
+        <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze" />
+    </text>
+
+    <!-- Sam the Fish -->
+    <g transform="translate(150, 120)">
+        <ellipse cx="0" cy="0" rx="10" ry="5" fill="orange">
+            <animate attributeName="cx" values="0;50;0" dur="5s" repeatCount="indefinite" />
+        </ellipse>
+        <polygon points="10,0 20,-5 20,5" fill="orange">
+            <animateTransform attributeName="transform" type="rotate" values="0 10 0; 10 10 0; -10 10 0; 0 10 0" dur="1s" repeatCount="indefinite" />
+        </polygon>
+        <circle cx="-5" cy="-2" r="2" fill="black" />
+    </g>
+
+    <!-- Bubbles -->
+    <circle cx="50" cy="50" r="3" fill="white">
+        <animate attributeName="cy" values="50;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80" cy="70" r="3" fill="white">
+        <animate attributeName="cy" values="70;20" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="120" cy="40" r="3" fill="white">
+        <animate attributeName="cy" values="40;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+</svg>
+<div class="text-container">
+</div>
