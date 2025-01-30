@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="800" height="400">
+    <!-- Dark ocean background -->
+    <rect width="400" height="200" fill="#000033"/>
+
+    <!-- Sam the Fish -->
+    <g transform="translate(50, 100)">
+        <ellipse cx="0" cy="0" rx="10" ry="5" fill="orange">
+            <animate attributeName="cx" values="0;50;0" dur="5s" repeatCount="indefinite"/>
+        </ellipse>
+        <polygon points="10,0 20,-5 20,5" fill="orange">
+            <animateTransform attributeName="transform" type="rotate" values="0 10 0; 10 10 0; -10 10 0; 0 10 0"
+                              dur="1s" repeatCount="indefinite"/>
+        </polygon>
+        <circle cx="-5" cy="-2" r="2" fill="black"/>
+    </g>
+
+    <!-- Olive the Octopus -->
+    <g transform="translate(100, 120)">
+        <!-- Body -->
+        <circle cx="0" cy="0" r="10" fill="purple"/>
+        <!-- Tentacles -->
+        <path d="M0,10 Q10,15 10,20 T0,30" fill="none" stroke="purple" stroke-width="2">
+            <animate attributeName="d"
+                     values="M0,10 Q10,15 10,20 T0,30; M0,10 Q5,15 10,25 T0,35; M0,10 Q10,15 10,20 T0,30" dur="1s"
+                     repeatCount="indefinite"/>
+        </path>
+        <path d="M0,10 Q-10,15 -10,20 T0,30" fill="none" stroke="purple" stroke-width="2">
+            <animate attributeName="d"
+                     values="M0,10 Q-10,15 -10,20 T0,30; M0,10 Q-5,15 -10,25 T0,35; M0,10 Q-10,15 -10,20 T0,30" dur="1s"
+                     repeatCount="indefinite"/>
+        </path>
+        <!-- Eyes -->
+        <circle cx="-3" cy="-5" r="2" fill="white"/>
+        <circle cx="3" cy="-5" r="2" fill="white"/>
+        <circle cx="-3" cy="-5" r="1" fill="black"/>
+        <circle cx="3" cy="-5" r="1" fill="black"/>
+    </g>
+
+    <!-- Tilly the Sea Turtle -->
+    <g transform="translate(150, 120)">
+        <!-- Shell -->
+        <circle cx="0" cy="0" r="15" fill="#8B4513">
+            <animate attributeName="fill" values="#8B4513; #FFD700; #8B4513" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Body -->
+        <circle cx="0" cy="0" r="10" fill="#A0522D"/>
+        <!-- Flippers -->
+        <ellipse cx="-15" cy="0" rx="5" ry="10" fill="#A0522D"/>
+        <ellipse cx="15" cy="0" rx="5" ry="10" fill="#A0522D"/>
+        <!-- Head -->
+        <circle cx="0" cy="-15" r="5" fill="#A0522D"/>
+        <!-- Eyes -->
+        <circle cx="-2" cy="-16" r="2" fill="white"/>
+        <circle cx="2" cy="-16" r="2" fill="white"/>
+        <circle cx="-2" cy="-16" r="1" fill="black"/>
+        <circle cx="2" cy="-16" r="1" fill="black"/>
+    </g>
+
+    <!-- Treasure Chest -->
+    <g transform="translate(300, 150)">
+        <!-- Chest -->
+        <rect x="0" y="0" width="40" height="20" fill="#8B4513"/>
+        <rect x="5" y="-5" width="30" height="5" fill="#A0522D"/>
+        <!-- Lid -->
+        <rect x="0" y="0" width="40" height="5" fill="#A0522D">
+            <animateTransform attributeName="transform" type="rotate" values="0 20 5; -20 20 5; 0 20 5" dur="2s"
+                              begin="2s" fill="freeze"/>
+        </rect>
+        <!-- Golden Key -->
+        <g transform="translate(20, 5)">
+            <rect x="0" y="0" width="5" height="10" fill="gold"/>
+            <circle cx="2.5" cy="2.5" r="2.5" fill="gold"/>
+            <rect x="2" y="0" width="1" height="3" fill="gold"/>
+        </g>
+        <!-- Sparkling Treasure -->
+        <g transform="translate(10, 10)">
+            <!-- Pearls -->
+            <circle cx="5" cy="5" r="3" fill="white">
+                <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="15" cy="10" r="3" fill="white">
+                <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Coins -->
+            <circle cx="25" cy="5" r="3" fill="gold">
+                <animate attributeName="r" values="3;4;3" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Seashell Crown -->
+            <path d="M10,15 Q15,10 20,15 T30,15" fill="none" stroke="#FFD700" stroke-width="2">
+                <animate attributeName="stroke" values="#FFD700; #FFA500; #FFD700" dur="1s" repeatCount="indefinite"/>
+            </path>
+        </g>
+    </g>
+
+    <!-- Bubbles -->
+    <circle cx="50" cy="50" r="3" fill="white">
+        <animate attributeName="cy" values="50;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="70" r="3" fill="white">
+        <animate attributeName="cy" values="70;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="40" r="3" fill="white">
+        <animate attributeName="cy" values="40;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+</svg>
+<div class="text-container">11. Sam, Olive, and Tilly swam past the rock and found the treasure chest. Sam used the
+    golden key to open it. Inside were shiny pearls, glittering coins, and a crown made of seashells. It was the most
+    amazing thing Sam had ever seen!
+</div>

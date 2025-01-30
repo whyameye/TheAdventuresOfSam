@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="800" height="400">
+    <!-- Ocean background -->
+    <rect width="400" height="200" fill="#1E90FF"/>
+
+    <!-- Sand at the bottom -->
+    <rect y="180" width="400" height="20" fill="#F4A460"/>
+
+    <!-- Coral reef -->
+    <polygon points="50,180 70,150 90,180" fill="#FF6F61"/>
+    <polygon points="120,180 140,130 160,180" fill="#FFA07A"/>
+    <polygon points="250,180 270,140 290,180" fill="#FF6F61"/>
+    <polygon points="320,180 340,160 360,180" fill="#FFA07A"/>
+
+    <!-- Olive the Octopus -->
+    <g transform="translate(150, 120)">
+        <!-- Body -->
+        <circle cx="0" cy="0" r="10" fill="purple"/>
+        <!-- Tentacles -->
+        <path d="M0,10 Q10,15 10,20 T0,30" fill="none" stroke="purple" stroke-width="2">
+            <animate attributeName="d"
+                     values="M0,10 Q10,15 10,20 T0,30; M0,10 Q5,15 10,25 T0,35; M0,10 Q10,15 10,20 T0,30" dur="1s"
+                     repeatCount="indefinite"/>
+        </path>
+        <path d="M0,10 Q-10,15 -10,20 T0,30" fill="none" stroke="purple" stroke-width="2">
+            <animate attributeName="d"
+                     values="M0,10 Q-10,15 -10,20 T0,30; M0,10 Q-5,15 -10,25 T0,35; M0,10 Q-10,15 -10,20 T0,30" dur="1s"
+                     repeatCount="indefinite"/>
+        </path>
+        <!-- Eyes -->
+        <circle cx="-3" cy="-5" r="2" fill="white"/>
+        <circle cx="3" cy="-5" r="2" fill="white"/>
+        <circle cx="-3" cy="-5" r="1" fill="black"/>
+        <circle cx="3" cy="-5" r="1" fill="black"/>
+    </g>
+
+    <!-- Golden Key -->
+    <g transform="translate(180, 100)">
+        <rect x="0" y="0" width="5" height="10" fill="gold">
+            <animate attributeName="opacity" values="1;0.8;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <circle cx="2.5" cy="2.5" r="2.5" fill="gold">
+            <animate attributeName="opacity" values="1;0.8;1" dur="1s" repeatCount="indefinite"/>
+        </circle>
+        <rect x="2" y="0" width="1" height="3" fill="gold">
+            <animate attributeName="opacity" values="1;0.8;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+
+    <!-- Bubbles -->
+    <circle cx="50" cy="50" r="3" fill="white">
+        <animate attributeName="cy" values="50;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="70" r="3" fill="white">
+        <animate attributeName="cy" values="70;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="40" r="3" fill="white">
+        <animate attributeName="cy" values="40;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+</svg>
+<div class="text-container">4. Olive examined the key with her tentacles. “Hmm, this looks like it belongs to a treasure
+    chest! But we’ll need a map to find it. Let’s go ask Carl the Crab. He knows everything about the reef.”
+</div>

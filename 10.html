@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="800" height="400">
+    <!-- Dark ocean background -->
+    <rect width="400" height="200" fill="#000033"/>
+
+    <!-- Sam the Fish -->
+    <g transform="translate(50, 100)">
+        <ellipse cx="0" cy="0" rx="10" ry="5" fill="orange">
+            <animate attributeName="cx" values="0;50;0" dur="5s" repeatCount="indefinite"/>
+        </ellipse>
+        <polygon points="10,0 20,-5 20,5" fill="orange">
+            <animateTransform attributeName="transform" type="rotate" values="0 10 0; 10 10 0; -10 10 0; 0 10 0"
+                              dur="1s" repeatCount="indefinite"/>
+        </polygon>
+        <circle cx="-5" cy="-2" r="2" fill="black"/>
+    </g>
+
+    <!-- Anglerfish -->
+    <g transform="translate(300, 50)">
+        <!-- Body -->
+        <ellipse cx="0" cy="0" rx="30" ry="15" fill="#444444"/>
+        <!-- Glowing Teeth -->
+        <polygon points="-20,10 -10,15 -10,5" fill="#FFFF00">
+            <animate attributeName="fill" values="#FFFF00; #FFA500; #FFFF00" dur="1s" repeatCount="indefinite"/>
+        </polygon>
+        <polygon points="20,10 10,15 10,5" fill="#FFFF00">
+            <animate attributeName="fill" values="#FFFF00; #FFA500; #FFFF00" dur="1s" repeatCount="indefinite"/>
+        </polygon>
+        <!-- Glowing Lure -->
+        <circle cx="0" cy="-20" r="5" fill="#FFFF00">
+            <animate attributeName="fill" values="#FFFF00; #FFA500; #FFFF00" dur="1s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Eyes -->
+        <circle cx="-10" cy="-5" r="3" fill="white"/>
+        <circle cx="10" cy="-5" r="3" fill="white"/>
+        <circle cx="-10" cy="-5" r="1.5" fill="black"/>
+        <circle cx="10" cy="-5" r="1.5" fill="black"/>
+        <!-- Mouth (grinning) -->
+        <path d="M-15,10 Q0,20 15,10" fill="none" stroke="#FF0000" stroke-width="2">
+            <animate attributeName="d" values="M-15,10 Q0,20 15,10; M-15,10 Q0,15 15,10; M-15,10 Q0,20 15,10" dur="1s"
+                     repeatCount="indefinite"/>
+        </path>
+    </g>
+    <!-- Treasure Chest -->
+    <g transform="translate(350, 150)">
+        <rect x="0" y="0" width="30" height="15" fill="#8B4513"/>
+        <rect x="5" y="-5" width="20" height="5" fill="#A0522D"/>
+        <circle cx="15" cy="-5" r="3" fill="#FFD700"/>
+        <animate attributeName="opacity" values="0;1" dur="2s" begin="8s" fill="freeze"/>
+    </g>
+
+    <!-- Bubbles -->
+    <circle cx="50" cy="50" r="3" fill="white">
+        <animate attributeName="cy" values="50;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="70" r="3" fill="white">
+        <animate attributeName="cy" values="70;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="40" r="3" fill="white">
+        <animate attributeName="cy" values="40;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+</svg>
+<div class="text-container">10. Sam gulped but spoke up bravely. “We’re looking for a treasure chest. Do you know where
+    it is?”
+
+    The anglerfish grinned. “I do, but you’ll have to solve my riddle first. What has keys but can’t open locks?”
+
+    Sam thought hard. “A piano!” they exclaimed.
+
+    The anglerfish laughed. “Correct! The treasure is just beyond that rock.”
+</div>
